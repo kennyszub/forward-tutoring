@@ -1,1 +1,61 @@
-%h2#message Hello World!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %meta{content: "", name: "description"}/
+    %meta{content: "", name: "author"}/
+    %title Justified Nav Template for Bootstrap
+    / Bootstrap core CSS
+    %link{href: "bootstrap.css", rel: "stylesheet"}/
+    / Custom styles for this template
+    %link{href: "home.css", rel: "stylesheet"}/
+    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+  %body
+    .container
+      .masthead
+        =image_tag("logo.jpg")
+        %ul.nav.nav-justified
+          %li.active
+            %a{href: "#"} Mission
+          %li
+            %a{href: "#"} About Us
+          %li
+            %a{href: "#"} Support Us
+          %li
+            %a{href: "#"} Blog
+          %li
+            %a{href: "#"} Contact
+      / Jumbotron
+      .jumbotron
+        %h1 Get Started!
+        %p.lead Forward Tutoring connects you to free online tutoring, cool volunteer opportunities, and exclusive scholarships - all at your convenience.
+        %p
+          %a.btn.btn-lg.btn-success{href: "#"} Login
+      / Example row of columns
+      .row
+        .col-lg-4
+          %h2 Students
+          %p Students seeking free math and science online tutoring and meaningful, relevant opportunities to give back.
+          %p
+            %a.btn.btn-primary{href: "#"} View details »
+        .col-lg-4
+          %h2 Tutors
+          %p Experienced, qualified tutors who complete community service and earn scholarships and rewards by teaching math and science online.
+          %p
+            %a.btn.btn-primary{href: "#"} View details »
+        .col-lg-4
+          %h2 Organizations
+          %p Socially-minded organizations interested in advancing their missions with the help of young, passionate volunteers.
+          %p
+            %a.btn.btn-primary{href: "#"} View details »
+      / Site footer
+      .footer
+        %p © Company 2013
+    / /container
+    /
+      Bootstrap core JavaScript
+      \==================================================
+    / Placed at the end of the document so the pages load faster
