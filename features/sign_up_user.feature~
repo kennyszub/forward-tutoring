@@ -1,0 +1,16 @@
+    Feature: Allow student sign up
+    
+    As a student
+    So that I can use the site
+    I want to sign up for an account
+
+    Scenario: 
+    When I go to the home page
+    And I click Sign Up
+    Then I should go to the sign up page
+
+    Scenario:
+    When I go to the home page
+    And I click Sign Up
+    And I enter in an invalid email
+    Then I should see an invalid message
