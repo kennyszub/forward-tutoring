@@ -8,6 +8,6 @@
     When I go to the home page
     And I fill in "Email" with "test@gmail.com"
     And I fill in "Password" with "test123"
-    And I press "Sign in"
+    And I press "Sign In"
     Then I should see "Welcome"
 
