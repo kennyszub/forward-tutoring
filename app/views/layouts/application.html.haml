@@ -18,7 +18,7 @@
           //=image_tag("logo.jpg")
           = link_to image_tag( 'logo.jpg'), 'http://0.0.0.0:3000'
         .right
-          %form{method: "POST", action: "login"}
+          %form{:controller => 'sessions', method: "POST", action: "login"}
             = label :user, :email, "Email"
             = text_field :user, :email
             = label :user, :password

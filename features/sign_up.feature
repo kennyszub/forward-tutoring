@@ -6,7 +6,7 @@
 
     Scenario: 
     When I go to the home page
-    And I follow "test"
+    And I press "signUpBtn"
     Then I should see "Username"
 
  
