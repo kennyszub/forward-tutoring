@@ -16,7 +16,15 @@
   %body
     .container
       .masthead
-        =image_tag("logo.jpg")
+        .left
+          =image_tag("logo.jpg")
+        .right
+          %form
+            = label :user, :email, "Email"
+            = text_field :user, :email
+            = label :user, :password
+            = password_field :user, :password
+            %input{:type => "submit", :value => "Sign in"}
         %ul.nav.nav-justified
           %li.active
             %a{href: "#"} Mission
@@ -33,7 +41,7 @@
         %h1 Get Started!
         %p.lead Forward Tutoring connects you to free online tutoring, cool volunteer opportunities, and exclusive scholarships - all at your convenience.
         %p
-          %a.btn.btn-lg.btn-success{href: "#"} Login
+          %a.btn.btn-lg.btn-success{href: "#"} Sign Up
       / Example row of columns
       .row
         .col-lg-4
