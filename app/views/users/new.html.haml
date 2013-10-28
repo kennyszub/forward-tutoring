@@ -1,5 +1,36 @@
 .Sign_Form
-  %h1 Sign Up
+  %body
+    .container
+      .row
+        .col-md-offset-3
+          %h1 Sign Up
+      .row
+        %form.form-horizontal{role: "form"}
+          .form-group
+            %label.col-lg-2.control-label{for: "inputUsername1"} Username
+            .col-lg-3
+              %input#inputEmail1.form-control{placeholder: "Username", type: "username"}/
+          .form-group
+            %label.col-lg-2.control-label{for: "inputEmail1"} Email
+            .col-lg-3
+              %input#inputEmail1.form-control{placeholder: "Email", type: "email"}/
+          .form-group
+            %label.col-lg-2.control-label{for: "inputPassword1"} Password
+            .col-lg-3
+              %input#inputPassword1.form-control{placeholder: "Password", type: "password"}/
+          .form-group
+            %label.col-lg-2.control-label{for: "inputPassword1"} Confirm Password
+            .col-lg-3
+              %input#inputPassword1.form-control{placeholder: "Re-enter Password", type: "password_confirmation"}/
+          .form-group
+            .col-lg-offset-3.col-lg-10
+              %button.btn.btn-primary{type: "submit"} Sign Up
+          - if @user.errors.any?
+            %ul.Signup_Errors
+          - for message_error in @user.errors.full_messages
+            %li
+              * #{message_error}
+/
   = form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f|
     %p
       Username: #{f.text_field :username}
@@ -10,8 +41,9 @@
     %p
       Password Confirmation: #{f.password_field :password_confirmation}
     = f.submit :Signup
-  - if @user.errors.any?
-    %ul.Signup_Errors
-      - for message_error in @user.errors.full_messages
-        %li
-          * #{message_error}
+    - if @user.errors.any?
+      %ul.Signup_Errors
+    - for message_error in @user.errors.full_messages
+      %li
+        * #{message_error}
+/

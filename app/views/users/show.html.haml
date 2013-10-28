@@ -28,8 +28,8 @@
             %a{href: "#"} Contact
       / Jumbotron
       .jumbotron
-        %h1 Welcome (username)!
-        %p1 Email: (email)
+        %h1 Welcome #{@current_user.username}!
+        %p1 Email: #{@current_user.email}
       / Site footer
       .footer
         %p © Forward Tutoring 2013  Assisted by UC Berkeley CS 169 Group #29

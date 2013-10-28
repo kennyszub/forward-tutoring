@@ -1,0 +1,39 @@
+!!!
+%html
+  %head
+    %title Tutoring
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %meta{content: "", name: "description"}/
+    %meta{content: "", name: "author"}/
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+  %body
+    .container
+      .masthead
+        .left
+          //=image_tag("logo.jpg")
+          = link_to image_tag( 'logo.jpg'), 'http://0.0.0.0:3000'
+        .right
+          %form
+            = label :user, :email, "Email"
+            = text_field :user, :email
+            = label :user, :password
+            = password_field :user, :password
+            %input{:type => "submit", :value => "Sign in"}
+        %ul.nav.nav-justified
+          %li
+            %a{href: "#"} Mission
+          %li
+            %a{href: "#"} About Us
+          %li
+            %a{href: "#"} Support Us
+          %li
+            %a{href: "#"} Blog
+          %li
+            %a{href: "#"} Contact
+    / Container
+    = yield
