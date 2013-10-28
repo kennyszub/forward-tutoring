@@ -6,11 +6,12 @@
 
     Scenario: 
     When I go to the home page
-    And I press "Sign Up"
+    And I follow "test"
     Then I should see "Username"
 
     Scenario:
-    When I go to the signup page
-    And I press "Sign Up"
-    And I fill in "Email" with "test123"
+    When I go to the home page
+    And I follow "test"
+    And I fill in "Email:" with "test123"
+    And I press "Signup"
     Then I should see "Email is invalid"

@@ -5,8 +5,7 @@
     I want to log into my account
 
     Scenario: 
-    When I see "Get Started!"
-    And I fill in "Email" with "test@gmail.com"
+    When I fill in "Email" with "test@gmail.com"
     And I fill in "Password" with "test123"
     And I press "Sign in"
     Then I should see "Welcome"
