@@ -26,7 +26,8 @@ class SessionsController < ApplicationController
       print "DADFASFSAFDSAFDAS"
       print ""
       print ""
-      redirect_to user_path(authorized_user)
+      redirect_to user_path(authorized_user), :layout => "users/show.html.haml"
+
     else
       flash[:notice] = "Invalid Username or Password"
       flash[:color]= "invalid"
