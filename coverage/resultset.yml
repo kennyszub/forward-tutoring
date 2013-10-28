@@ -1,0 +1,158 @@
+---
+Cucumber Features:
+  :original_result: {}
+  :created_at: 2013-10-28 04:48:14.709273479 -07:00
+RSpec:
+  :original_result:
+    /home/saasbook/Documents/cs169/forward-tutoring/app/controllers/application_controller.rb:
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 0
+    - 
+    - 
+    - 
+    /home/saasbook/Documents/cs169/forward-tutoring/app/helpers/application_helper.rb:
+    - 1
+    - 
+    /home/saasbook/Documents/cs169/forward-tutoring/app/helpers/home_helper.rb:
+    - 1
+    - 
+    /home/saasbook/Documents/cs169/forward-tutoring/app/helpers/users_helper.rb:
+    - 1
+    - 
+    /home/saasbook/Documents/cs169/forward-tutoring/app/controllers/home_controller.rb:
+    - 1
+    - 1
+    - 
+    - 
+    /home/saasbook/Documents/cs169/forward-tutoring/app/controllers/sessions_controller.rb:
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    /home/saasbook/Documents/cs169/forward-tutoring/app/controllers/users_controller.rb:
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    /home/saasbook/Documents/cs169/forward-tutoring/app/models/user.rb:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 2
+    - 2
+    - 2
+    - 
+    - 
+    - 1
+    - 2
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 
+  :created_at: 2013-10-28 06:30:37.430301489 -07:00
