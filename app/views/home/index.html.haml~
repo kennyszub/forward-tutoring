@@ -41,8 +41,11 @@
         %h1 Get Started!
         %p.lead Forward Tutoring connects you to free online tutoring, cool volunteer opportunities, and exclusive scholarships - all at your convenience.
         %p
+<<<<<<< HEAD
+          %a.btn.btn-lg.btn-success{href: "#"} Sign Up
+=======
           %a.btn.btn-lg.btn-success{href: new_user_path} Sign Up!
-
+>>>>>>> 06b10c9e006f25579b4c12500aa38fccf9e9ea76
       / Example row of columns
       .row
         .col-lg-4
