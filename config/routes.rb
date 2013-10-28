@@ -52,6 +52,13 @@ Tutoring::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => 'home#index'
 
+  match "signup", :to => "users#new"
+  match "login", :to => "sessions#login"
+  match "logout", :to => "sessions#logout"
+  match "home", :to => "sessions#home"
+  match "profile", :to => "sessions#profile"
+  match "setting", :to => "sessions#setting"
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
