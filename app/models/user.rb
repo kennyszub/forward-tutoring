@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :username, :password, :email, :password_confirmation
   attr_accessor :password
   EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
   validates :username, :presence => true, :uniqueness => true, :length => { :in => 3..20 }

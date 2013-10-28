@@ -13,6 +13,6 @@ class UsersController < ApplicationController
       flash[:color]= "invalid"
     end
     #render "new"
-    redirect_to home_path(@user)
+    redirect_to '/'
   end
 end
