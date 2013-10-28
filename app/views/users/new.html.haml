@@ -1,6 +1,22 @@
 .Sign_Form
   %body
     .container
+      = form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f|
+        %p
+          Username: #{f.text_field :username}
+        %p
+          Email: #{f.text_field :email}
+        %p
+          Password: #{f.password_field :password}
+        %p
+          Password Confirmation: #{f.password_field :password_confirmation}
+        = f.submit :Signup
+        - if @user.errors.any?
+          %ul.Signup_Errors
+        - for message_error in @user.errors.full_messages
+          %li
+            * #{message_error}
+    /
       .row
         .col-md-offset-3
           %h1 Sign Up
@@ -30,20 +46,3 @@
           - for message_error in @user.errors.full_messages
             %li
               * #{message_error}
-/
-  = form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f|
-    %p
-      Username: #{f.text_field :username}
-    %p
-      Email: #{f.text_field :email}
-    %p
-      Password: #{f.password_field :password}
-    %p
-      Password Confirmation: #{f.password_field :password_confirmation}
-    = f.submit :Signup
-    - if @user.errors.any?
-      %ul.Signup_Errors
-    - for message_error in @user.errors.full_messages
-      %li
-        * #{message_error}
-/

@@ -18,12 +18,12 @@
           //=image_tag("logo.jpg")
           = link_to image_tag( 'logo.jpg'), 'http://0.0.0.0:3000'
         .right
-          %form
+          %form{method: "POST", action: "login"}
             = label :user, :email, "Email"
             = text_field :user, :email
             = label :user, :password
             = password_field :user, :password
-            %input{:type => "submit", :value => "Sign in"}
+            = submit_tag 'Sign In'
         %ul.nav.nav-justified
           %li
             %a{href: "#"} Mission
