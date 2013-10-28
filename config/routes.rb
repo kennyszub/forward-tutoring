@@ -53,7 +53,7 @@ Tutoring::Application.routes.draw do
   root :to => 'home#index'
 
   match "signup", :to => "users#new"
-  match "login", :to => "sessions#login"
+  match "login", :to => "sessions#login_attempt"
   match "logout", :to => "sessions#logout"
   match "home", :to => "sessions#home"
   match "profile", :to => "sessions#profile"

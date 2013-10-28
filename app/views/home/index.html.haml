@@ -19,12 +19,13 @@
         .left
           =image_tag("logo.jpg")
         .right
-          %form
+          %form{method: "POST", action: "login"}
             = label :user, :email, "Email"
             = text_field :user, :email
             = label :user, :password
             = password_field :user, :password
-            %input{:type => "submit", :value => "Sign in"}
+            = submit_tag 'Sign In'
+            -#%input{:type => "submit", :value => "Sign in"}
         %ul.nav.nav-justified
           %li.active
             %a{href: "#"} Mission
