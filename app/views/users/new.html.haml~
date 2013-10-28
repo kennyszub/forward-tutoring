@@ -9,7 +9,7 @@
           .form-group
             %label.col-lg-2.control-label{for: "inputUsername1"} Username
             .col-lg-3
-              %input#inputEmail1.form-control{placeholder: "Username", type: "username"}/
+              %input#inputEmail2.form-control{placeholder: "Username", type: "username"}/
           .form-group
             %label.col-lg-2.control-label{for: "inputEmail1"} Email
             .col-lg-3
